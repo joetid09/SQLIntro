@@ -1,5 +1,1 @@
-﻿Select YearEstablished from Artist where ArtistName = 'Aquabats'
-
-update Artist
-set YearEstablished = 1994
-Where ArtistName = 'Aquabats'
+﻿INSERT INTO Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId) VALUES (' The Aquabats VS the Floating Eye of Death', '10/26/1999', 3718, 'Golden Voice Records', 28, 2);
