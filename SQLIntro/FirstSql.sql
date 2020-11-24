@@ -1,1 +1,6 @@
-﻿INSERT INTO Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId) VALUES (' The Aquabats VS the Floating Eye of Death', '10/26/1999', 3718, 'Golden Voice Records', 28, 2);
+﻿SELECT COUNT(Song.Title) Title From Album
+Left JOIN Song
+on Song.AlbumId = Album.Id
+Left Join Artist
+on Song.ArtistId = Artist.Id
+WHERE Album.Title = 'Eliminator'
