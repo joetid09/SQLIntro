@@ -1,7 +1,5 @@
 ﻿
-SELECT COUNT(Song.Title) Title, [AlbumId] From Album
+SELECT COUNT(Song.Title) Title, [Label] From Genre
 Left JOIN Song
-on Album.Id = Song.AlbumId
-Left Join Artist
-on Song.ArtistId = Artist.Id
-Group by AlbumId
+on Genre.Id = Song.GenreId
+Group By Label
