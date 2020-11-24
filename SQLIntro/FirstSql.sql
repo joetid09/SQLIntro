@@ -1,5 +1,5 @@
 ﻿
-SELECT * from Album
-Where AlbumLength = (SELECT MAX(AlbumLength) from Album)
+SELECT * from Song
+Where SongLength = (SELECT MAX(SongLength) from Song)
 
 
